@@ -1,0 +1,43 @@
+.ui-bestSellerBooks {
+  width: 70%;
+  margin-left: 20%;
+  /* border: 1px solid black; */
+}
+.ui-box {
+  height:180px;
+  width: 100%;
+  margin: 0;
+  padding-left: 50px;
+
+}
+.ui-box img{
+  display: inline-block;
+  height:180px;
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 0px;
+}
+.ui-rack {
+  height: 30px;
+  width: 93%;
+  /* //background-color: darkorange; */
+  background-image: linear-gradient(rgb(255, 196, 0) , orange , rgb(94, 70, 28));
+  margin: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 20px;
+}
+
+.ui-coverPic {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 5px;
+}
+
+.ui-coverPic img{
+  width: 80%;
+  height: 400px;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import {Switch , Link, Route,BrowserRouter as Router, Redirect} from 'react-router-dom';
-import About from './About'
-import Home from './Home'
-import Books from './Books'
+import About from './About';
+import Home from './Home';
+import Books from './Books';
+import BestSellerBooks from './BestSellerBooks';
 
 class App extends React.Component {
   render() {
@@ -22,7 +23,7 @@ class App extends React.Component {
            
               <Switch>
                 <Route exact path="/" component = {Home} />
-                <Route exact path="/bestSellers" component = {BestSellers} />
+                <Route exact path="/bestSellerBooks" component = {BestSellerBooks} />
                 <Route path="/about" component = {About} />
                 <Route path="/books" component = {Books} />
               </Switch>

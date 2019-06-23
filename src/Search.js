@@ -27,7 +27,7 @@ class Search extends React.Component  {
   }
   render(){
     return (<form onSubmit={this.handleFormSubmit}>
-      <input type = "search" name = "bookName" className = "" value={this.bookName} onChange={this.handleFormChange}/>
+      <input className = "search-btn" type = "search" name = "bookName" className = "" value={this.bookName} onChange={this.handleFormChange}/>
       <button className = "btn-search">Search</button>
     </form>)
 
