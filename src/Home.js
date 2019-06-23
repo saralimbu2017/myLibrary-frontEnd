@@ -1,8 +1,16 @@
 import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import {Switch , Link, Route,BrowserRouter as Router, Redirect} from 'react-router-dom';
+import Search from './Search'
 
-export default function Home() {
-  return <div>
-      "Home"
-  </div>
-  
+class Home extends React.Component {
+
+  render() {
+    return <div >
+        <Search />
+    </div>
+  }
 }
+
+export default Home;
