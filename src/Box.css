@@ -1,7 +1,12 @@
 .ui-bestSellerBooks {
   width: 70%;
   margin-left: 20%;
+  margin-top: 50px;
   /* border: 1px solid black; */
+}
+.ui-bestSellerBooks p {
+  font-size: 20px;
+  font-weight: 600;
 }
 .ui-box {
   height:180px;
@@ -15,13 +20,13 @@
   height:180px;
   width: 150px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
   padding: 0px;
 }
 .ui-rack {
   height: 30px;
-  width: 93%;
+  width: 100%;
   /* //background-color: darkorange; */
   background-image: linear-gradient(rgb(255, 196, 0) , orange , rgb(94, 70, 28));
   margin: 0;
@@ -38,6 +43,6 @@
 }
 
 .ui-coverPic img{
-  width: 80%;
+  width: 90%;
   height: 400px;
 }

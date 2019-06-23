@@ -3,6 +3,9 @@ import React from 'react';
 import './App.css';
 import Box from './Box'
 import './Box.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+
 class BestSellerBooks extends React.Component {
   state= {
     bestSellerBooks:[
@@ -14,9 +17,11 @@ class BestSellerBooks extends React.Component {
   }
   render() {
     const { bestSellerBooks } = this.state
-    //const { im } = this.state
+    const stars = [1,2,3,4,5];
     return (
             <div className = "ui-bestSellerBooks">
+              <p>Top Rated Books{ stars.map(star=> <FontAwesomeIcon icon={faStar} />
+              )} </p> 
               <div className = "ui-box">
                 { bestSellerBooks.map(book =>
                   // <Box key={book.name} book= {book}/>

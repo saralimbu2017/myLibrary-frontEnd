@@ -1,5 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router-dom';
+import './Search.css';
 
 class Search extends React.Component  {
   state= {
@@ -27,7 +28,7 @@ class Search extends React.Component  {
   }
   render(){
     return (<form onSubmit={this.handleFormSubmit}>
-      <input className = "search-btn" type = "search" name = "bookName" className = "" value={this.bookName} onChange={this.handleFormChange}/>
+      <input className = "search-input" type = "search" name = "bookName"  value={this.bookName} onChange={this.handleFormChange} placeholder = "Enter book title"/>
       <button className = "btn-search">Search</button>
     </form>)
 

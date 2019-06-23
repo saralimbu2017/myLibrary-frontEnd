@@ -42,7 +42,7 @@ header {
 header h1 {
   font-family: cursive;
   font-size: 50px;
-  margin-left: 50%;
+  margin-left: 30%;
 }
 .ui-main-wrapper {
   display: flex;
@@ -50,13 +50,13 @@ header h1 {
   height: 900px;
 }
 .ui-main {
-  width:80%;
+  width:70%;
   height: 100%;
-  border:1px solid black;
+  /* border:1px solid black; */
 }
 .ui-search {
-  width:20%;
-  border:1px solid black;
+  width:30%;
+  /* border:1px solid black; */
   margin-left: 5px;
 
 }
