@@ -1,6 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  font-family: sans-serif;
+}
 .ui-container {
   display: flex;
   height:100%;
   width:100%;
+  align-items: stretch;
   background-color: mistyrose;
+  background-image: url(/images/wood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-wrap: wrap; 
+}
+nav {
+  display: flex;
+  width:98%;
+  height: 50px;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: aliceblue;
+}
+.ui-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.ui-link:hover {
+  color: red;
+}
+header {
+  width:90%;
+  height:20px;
+}
+header h1 {
+  font-family: cursive;
+  font-size: 50px;
+  margin-left: 50%;
+}
+.ui-main-wrapper {
+  display: flex;
+  width: 100%;
+  height: 900px;
+}
+.ui-main {
+  width:80%;
+  height: 100%;
+  border:1px solid black;
+}
+.ui-search {
+  width:20%;
+  border:1px solid black;
+  margin-left: 5px;
+
 }

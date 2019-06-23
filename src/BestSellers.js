@@ -3,8 +3,14 @@ import React from 'react';
 import './App.css';
 import Search from './Search'
 
-class Home extends React.Component {
-
+class BestSellers extends React.Component {
+  state= {
+    bestSellerBooks:[
+      {name: "",image:"/images/wood.jpg"},
+      {name: "",image:"/images/wood.jpg"},
+      {name: "",image:"/images/wood.jpg"}
+    ]
+  }
   render() {
     return  <div className = "ui-main-wrapper">
       <div className = "ui-main">
@@ -17,4 +23,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default BestSellers;
