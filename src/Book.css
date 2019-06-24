@@ -1,0 +1,6 @@
+.ui-bookSection {
+  display: flex;
+  width: 90%;
+  border: 1px solid black;
+  background-color: beige;
+}

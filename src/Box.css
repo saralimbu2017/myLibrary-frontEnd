@@ -2,7 +2,7 @@
   width: 70%;
   margin-left: 20%;
   margin-top: 50px;
-  /* border: 1px solid black; */
+  /* border: 5px solid black; */
 }
 .ui-bestSellerBooks p {
   font-size: 20px;
@@ -13,7 +13,7 @@
   width: 100%;
   margin: 0;
   padding-left: 50px;
-
+  /* border: 1px solid rgb(38, 163, 55); */
 }
 .ui-box img{
   display: inline-block;
@@ -23,6 +23,7 @@
   margin-left: 10px;
   margin-right: 10px;
   padding: 0px;
+  /* border: 1px solid rgb(163, 134, 38); */
 }
 .ui-rack {
   height: 30px;
@@ -34,6 +35,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 20px;
+  /* border: 1px solid rgb(60, 31, 163); */
 }
 
 .ui-coverPic {

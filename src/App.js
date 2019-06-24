@@ -5,9 +5,11 @@ import About from './About';
 import Home from './Home';
 import Books from './Books';
 import BestSellerBooks from './BestSellerBooks';
+import Book from './Book';
 
 class App extends React.Component {
   render() {
+
     return (
       <Router>
         <div className="App">
@@ -26,6 +28,8 @@ class App extends React.Component {
                 <Route exact path="/bestSellerBooks" component = {BestSellerBooks} />
                 <Route path="/about" component = {About} />
                 <Route path="/books" component = {Books} />
+                {/* <Route path="/book/:id" render = {(props) => <Book {...props } />} /> */}
+                <Route path="/book/:id" component = {Book} />} />
               </Switch>
             
           </div>
