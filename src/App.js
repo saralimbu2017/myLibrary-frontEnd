@@ -6,7 +6,8 @@ import Home from './Home';
 import Books from './Books';
 import BestSellerBooks from './BestSellerBooks';
 import Book from './Book';
-
+import Preview from './Preview';
+import Test from './Test';
 class App extends React.Component {
   render() {
 
@@ -30,6 +31,8 @@ class App extends React.Component {
                 <Route path="/books" component = {Books} />
                 {/* <Route path="/book/:id" render = {(props) => <Book {...props } />} /> */}
                 <Route path="/book/:id" component = {Book} />} />
+                <Route path="/preview" component = {Preview} />} />
+                {/* <Route path="/test" component = {Test} />} /> */}
               </Switch>
             
           </div>

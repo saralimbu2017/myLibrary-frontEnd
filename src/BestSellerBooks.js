@@ -9,10 +9,10 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 class BestSellerBooks extends React.Component {
   state= {
     bestSellerBooks:[
-      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book1.png"},
-      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book1.png"},
-      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book1.png"},
-      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book1.png"}
+      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book1.jpeg"},
+      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book2.jpg"},
+      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book3.jpeg"},
+      {name: "So Good They Can’t Ignore You",author: "by Cal Newport",image:"/images/book4.jpg"}
     ]
   }
   render() {

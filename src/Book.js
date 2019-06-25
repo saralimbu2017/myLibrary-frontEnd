@@ -1,10 +1,7 @@
 import React from 'react'
 import Search from './Search'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar, 
-  faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom';
-
+import {withRouter} from 'react-router-dom';
 function Book(props) {
   //let  id = props.match.params.testvalue
   //let book = props.location.book
@@ -21,7 +18,19 @@ function Book(props) {
     // if(numHalfStar !== 0) {
     //   stars.push(0.5)
     // }
-
+  //console.log(props.location.resource.book)
+  // const handleClick = () => {
+  //   const current = '/preview';
+  //   props.history.replace(`/book`);
+  //      setTimeout(() => {
+  //        props.history.replace(current);
+  //      });
+  // //  props.history.push({
+  // //     pathname: '/preview',
+  // //     //state: { books: this.state.books }
+  // //   })
+  // }
+  const bookId = props.location.resource.book.id
   return (
     <div className = "ui-main-wrapper">
       <div className = "ui-main">
@@ -46,7 +55,8 @@ function Book(props) {
           
           <p>{props.location.resource.book.volumeInfo.description}</p>
           <h5>Author: {props.location.resource.book.volumeInfo.authors}</h5>
-          <a href= {props.location.resource.book.volumeInfo.previewLink}>Preview </a> 
+          {/* <a onClick = {handleClick}>Preview </a>  */}
+          <Link to={{pathname:`/preview`, identifier:{bookId}}}>Preview</Link>
 
           </div>
           </div>
@@ -58,4 +68,4 @@ function Book(props) {
     </div>
   )
 }
-export default Book;
+export default withRouter(Book);

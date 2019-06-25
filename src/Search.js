@@ -32,7 +32,7 @@ class Search extends React.Component  {
       <button className = "btn-search">Search</button>
     </form>)
 
-}
+  }
 }
 
 export default withRouter(Search);
