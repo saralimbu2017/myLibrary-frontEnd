@@ -2,7 +2,7 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Search from './Search'
-
+import './Preview.css';
  
 class Preview extends React.Component {
   previewBook(bookId){
@@ -27,7 +27,10 @@ class Preview extends React.Component {
   }
   componentDidMount() {
     const bookId = this.props.location.identifier.bookId
-    this.previewBook(bookId);
+    if(bookId ) {
+      this.previewBook(bookId);
+    }
+    
   }
 
   render() {
