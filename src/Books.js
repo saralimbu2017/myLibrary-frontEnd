@@ -14,8 +14,9 @@ export default function Books(props) {
     }
     return bookCollection;
   }
+  
   const bookCollection = sliceBooks(props.location.state.books,4)
-  //console.log(bookCollection)
+  //console.log(props)
   return (
     <div className = "ui-main-wrapper">
       <div className = "ui-main">
@@ -26,7 +27,10 @@ export default function Books(props) {
              
                 {books.map(book =>
                   <Link to={{pathname:`/book/${book.id}`,  resource: {book} }}>
-                  <img  key = "book.title" src = {book.volumeInfo.imageLinks.smallThumbnail}/></Link>
+                  
+                    <img  key = "book.title" src = {book.volumeInfo.imageLinks.smallThumbnail}/>
+                    {/* {book.volumeInfo.imageLinks.smallThumbnail} */}
+                    </Link>
                 )}
               </div>
               <div className = "ui-rack">
@@ -35,6 +39,7 @@ export default function Books(props) {
           )}
           
         </div> 
+        {/* <button onClick = {handleClick()}></button> */}
       </div>
       <div className = "ui-search">
         <Search />

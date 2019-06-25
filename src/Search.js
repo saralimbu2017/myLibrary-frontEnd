@@ -11,16 +11,24 @@ class Search extends React.Component  {
   handleFormSubmit = async(event) => { 
     event.preventDefault();
     const searchItem = this.state.bookName
-    const url = `http://localhost:8080/books?bookName=${searchItem}`
+    let startingIndex = 0
+    const url = `http://localhost:8080/books?bookName=${searchItem}&recordIndex=${startingIndex}`
     let response = await fetch(url)
+    //.then(res => res.text())
     const json = await response.json()
+    //console.log(json)
+    //const json = await response.json()
+      //handleDataState
       this.setState({
       books: json,
       redirect: true 
       })
       this.props.history.push({
         pathname: '/books',
-        state: { books: this.state.books }
+        state: { 
+          books: this.state.books,
+          bookName: this.state.bookName
+         }
       })
   }
   handleFormChange = (event) => {
@@ -32,7 +40,7 @@ class Search extends React.Component  {
       <button className = "btn-search">Search</button>
     </form>)
 
-  }
+}
 }
 
 export default withRouter(Search);

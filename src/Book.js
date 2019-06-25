@@ -31,6 +31,7 @@ function Book(props) {
   // //   })
   // }
   const bookId = props.location.resource.book.id
+  const content = props.location.resource.book.volumeInfo.description.substring(0,1000)+"..."
   return (
     <div className = "ui-main-wrapper">
       <div className = "ui-main">
@@ -53,7 +54,7 @@ function Book(props) {
           <div className = "ui-book-detail-description">
           <h3>{props.location.resource.book.volumeInfo.title}</h3>
           
-          <p>{props.location.resource.book.volumeInfo.description}</p>
+          <p>{content}</p>
           <h5>Author: {props.location.resource.book.volumeInfo.authors}</h5>
           {/* <a onClick = {handleClick}>Preview </a>  */}
           <Link to={{pathname:`/preview`, identifier:{bookId}}}>Preview</Link>
