@@ -32,7 +32,9 @@ class Search extends React.Component  {
       })
   }
   handleFormChange = (event) => {
-    this.setState({ bookName: event.target.value })
+    this.setState({ 
+      bookName: event.target.value 
+    })
   }
   render(){
     return (<form onSubmit={this.handleFormSubmit}>
