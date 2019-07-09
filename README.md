@@ -1,6 +1,6 @@
 # MyLibray - A React Project
 
-### A Book Searxh application built with:
+### A Book Search application built with:
   * es6 
   * React
 
